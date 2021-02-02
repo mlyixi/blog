@@ -1,0 +1,61 @@
+baseURL = "https://mlyixi.github.io/"
+languageCode = "zh-CN"
+title = "mlyixi的博客"
+theme = "maupassant"
+googleAnalytics = ""  # UA-XXXXXXXX-X
+
+## 保持分类的原始名字（false会做转小写处理）
+preserveTaxonomyNames = true
+## 是否禁止URL Path转小写
+disablePathToLower = true
+canonifyURLs = true
+hasCJKLanguage = true
+summaryLength = 140
+
+[author]
+  name = "mlyixi"
+
+[params]
+  author = "mlyixi"
+  subtitle = "欲望的唤醒，信仰的坚定"
+  keywords = "学习、研究、工作"
+  description = "misc"
+  busuanzi = true #启用不算子网页统计
+  localSearch = true # 启用本地搜索
+  fancybox = true
+  # 全局开关，你也可以在每一篇内容的 front matter 中针对单篇内容关闭或开启某些功能
+  toc = true  # 是否开启目录
+  katex = true
+
+## 开启版权声明，协议名字和链接都可以换
+[params.cc]
+    name = "知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议"
+    link = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+
+## 配置代码高亮
+[markup]
+  [markup.highlight]
+    lineNos = true
+    style = "solarized-dark"
+
+## 配置网站菜单
+
+[menu]
+
+  [[menu.main]]
+    identifier = "tools"
+    name = "工具"
+    url = "/tools/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "archives"
+    name = "归档"
+    url = "/archives/"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    weight = 4
